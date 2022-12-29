@@ -1,6 +1,8 @@
+import { useContext } from "react";
 import Card from "./Card";
-
-function Cards({ isDarkMode }) {
+import {SwitchContext} from "./SwitchContext";
+function Cards() {
+  const {isDarkMode} = useContext(SwitchContext)
   return (
     <div className="cards_wrap">
       <Card isDarkMode={isDarkMode} />

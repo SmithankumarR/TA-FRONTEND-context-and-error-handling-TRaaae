@@ -1,8 +1,10 @@
 import React from "react";
+import { SwitchContext } from "./SwitchContext";
 
 class Banner extends React.Component {
+  static contextType = SwitchContext;
   render() {
-    let { isDarkMode } = this.props;
+    let { isDarkMode } = this.context;
     return (
       <div
         className={

@@ -1,5 +1,9 @@
-function Paragraph({ isDarkMode }) {
+import { useContext } from "react";
+import { SwitchContext } from "./SwitchContext";
+function Paragraph() {
+  const { isDarkMode } = useContext(SwitchContext);
   return (
+
     <p className={`para ${isDarkMode ? "para-dark" : "para-light"}`}>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua. Sed tempus urna et
