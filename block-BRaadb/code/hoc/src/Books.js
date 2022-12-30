@@ -38,5 +38,5 @@ function Book(props) {
   );
 }
 
-const EnhancedBooks = HOC(Books,"Search Books Name")
+const EnhancedBooks = HOC(Books)
 export default EnhancedBooks;

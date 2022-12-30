@@ -42,5 +42,5 @@ function SinglePerson(props) {
   );
 }
 
-const EnhancedPeoples = HOC(People,"Search People Names")
+const EnhancedPeoples = HOC(People)
 export default EnhancedPeoples;

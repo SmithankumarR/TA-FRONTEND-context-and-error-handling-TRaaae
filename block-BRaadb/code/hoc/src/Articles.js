@@ -27,5 +27,5 @@ function Articles(props) {
     </>
   );
 }
-const EnhancedArticles = HOC(Articles,"Search Articles Name")
+const EnhancedArticles = HOC(Articles)
 export default withRouter(EnhancedArticles);
